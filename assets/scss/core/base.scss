@@ -1,0 +1,38 @@
+html,
+body,
+p,
+a {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 100%;
+	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+html, body, .wrapper {
+	height: 100%;
+	min-width:960px;
+}
+body {
+	background: #ffffff;
+	min-height: 100%;
+
+	> .wrapper {
+		height: auto;
+		min-height: 100%;
+	}
+}
+
+body {
+	&.section-spacing {
+		padding-top: 0;
+	}
+}
+
+.main {
+	overflow:auto;
+	padding-bottom: 0; //deve ter a mesma altura do rodapé
+	width:100%;
+
+	section {
+		// @extend %container;
+	}
+}
