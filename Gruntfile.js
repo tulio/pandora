@@ -60,11 +60,11 @@ module.exports = function(grunt){
 	// Watch ============================================================
 	config.watch = {
 		scripts: {
-				files: ["assets/javascripts/**/*.js", "assets/scss/**/*.scss"]
-			, tasks: ["dev"]
-			,	options: {
-      	livereload: true
-    	}
+				files: ["assets/scss/**/*.scss", "assets/javascripts/**/*.js"]
+			,	tasks: ["dev"]
+		}, 
+		options: {
+			livereload: true
 		}
 	};
 
